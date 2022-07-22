@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="225dp"
+            android:background="@color/purple_200"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:src="@drawable/passorder_login"></ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="패스오더"
+                android:textColor="#ffffff"
+                android:textSize="25sp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="누구나 쉽고 빠르게 하는 주문"
+                android:textColor="#ffffff"
+                android:textSize="15sp"
+                android:textStyle="bold"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:padding="10dp"
+                android:background="@color/teal_200"
+                android:layout_marginTop="30dp"
+                android:drawableStart="@drawable/ic_baseline_account_box_24"
+                android:drawableLeft="@drawable/ic_baseline_account_box_24"
+                android:id="@+id/idtext"
+                android:textColor="#ffffff"
+                android:layout_gravity="center"
+                android:hint="아이디"
+                android:layout_width="208dp"
+                android:layout_height="wrap_content">
+            </EditText>
+
+            <EditText
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:background="@color/teal_200"
+                android:layout_marginTop="30dp"
+                android:drawableStart="@drawable/ic_baseline_anchor_24"
+                android:drawableLeft="@drawable/ic_baseline_anchor_24"
+                android:id="@+id/pwtext"
+                android:textColor="#ffffff"
+                android:layout_gravity="center"
+                android:hint="패스워드"
+                android:layout_width="208dp"
+                android:layout_height="wrap_content">
+            </EditText>
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:text="로그인"
+                android:background="@color/design_default_color_secondary_variant"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content">
+            </Button>
+
+            <Button
+                android:id="@+id/btn_regi"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:text="회원가입"
+                android:background="@color/design_default_color_secondary_variant"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content">
+            </Button>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
